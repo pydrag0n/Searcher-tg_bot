@@ -17,7 +17,7 @@ print(f"[INFO] Админ: {ADMIN}")
 api_id = API_ID
 
 api_hash = API_HASH
-app = Client("my_account")
+app = Client("my_account", API_ID, API_HASH)
 
 app.on_message()
 
