@@ -46,7 +46,7 @@ async def main():
                     elif message.text != None:
                         if scan_text(worlds_data, message.text):
                             await app.forward_messages(ADMIN, chat_id, message_ids=message.id)
-            await app.send_message(ADMIN, )
+            await app.send_message(ADMIN)
     except Exception as er:
         print(er)
 app.run(main())
